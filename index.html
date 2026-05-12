@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse read</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+
+    <!-- INPUT -->
+    <div class="box">
+
+
+    <div class="topBar">
+
+    <div class="label" id="inputLabel">Text</div>
+
+    <div style="display:flex; gap:10px;">
+
+        <button class="circleBtn" id="pasteBtn" title="Paste">
+        📋
+        </button>
+
+        <button class="circleBtn" id="clearBtn" title="Clear">
+        ✕
+        </button>
+
+    </div>
+
+    </div>
+
+      <textarea
+        id="inputBox"
+        placeholder="Type here..."
+      ></textarea>
+
+    </div>
+
+    <!-- SWITCH -->
+    <div class="switch" id="switchButton" title="Switch">
+      ⇅
+    </div>
+
+    <!-- OUTPUT -->
+    <div class="box">
+
+      <div class="topBar">
+        <div class="label" id="outputLabel">Morse</div>
+
+        <button class="circleBtn" id="copyBtn" title="Copy">
+          ⧉
+        </button>
+      </div>
+
+      <textarea
+        id="outputBox"
+        class="output"
+        readonly
+        placeholder="Output..."
+      ></textarea>
+
+    </div>
+
+  </div>
+</body>
+</html>
